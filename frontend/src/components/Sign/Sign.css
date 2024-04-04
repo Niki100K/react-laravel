@@ -1,0 +1,56 @@
+/* .Sign {} */
+.Sign form {
+    margin: 2rem 0;
+}
+.Sign form .input {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+.Sign form input {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 4px .5rem .5rem;
+    border-radius: .5rem;
+    border: 2px solid var(--dark1);
+    color: var(--white1);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.Sign form label {
+    position: absolute;
+    left: .5rem;
+    font-size: 1.5rem;
+    font-family: var(--font3);
+    color: var(--white1);
+    opacity: .8;
+}
+.Sign form input:focus {
+    border: 3px solid var(--light2);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.Sign form input:focus + label,
+.Sign form input:not(:placeholder-shown) + label {
+    transform: translateY(-180%);
+    font-size: 1rem;
+    opacity: 1;
+    transition: .4s;
+    font-family: var(--font2);
+}
+.Sign p {
+    color: var(--white1);
+}
+.Sign p span {
+    color: var(--light2);
+    font-family: var(--font4);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.Sign button {
+    width: 100%;
+    padding: .5rem;
+    background: var(--light4);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    color: var(--white1);
+}
+.Sign button:hover {
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+}

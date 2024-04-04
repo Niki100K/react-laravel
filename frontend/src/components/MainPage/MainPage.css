@@ -1,0 +1,44 @@
+.MainPage {
+    padding: 8% .5rem 4%;
+    align-items: flex-start !important;
+}
+.MainPage .left {
+    position: sticky;
+    top: 2rem;
+    max-width: 320px;
+    margin-right: .5rem;
+    border-radius: .5rem;
+    padding: 1rem .5rem 2rem;
+    background: var(--light1);
+}
+.MainPage .games {
+    flex: 1;
+    flex-wrap: wrap;
+}
+.MainPage .games .game {
+    max-width: 19.5%;
+    margin-bottom: .5rem;
+}
+.MainPage .games .game .img {
+    position: relative;
+    overflow: hidden;
+    border-radius: .5rem;
+}
+.MainPage .games .game img {
+    aspect-ratio: .7;
+    cursor: pointer;
+    opacity: .7;
+}
+.MainPage .games .game img:hover {
+    opacity: 1;
+}
+.MainPage .games .game dfn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: .5rem;
+    padding: 4px .5rem;
+    border-radius: .5rem;
+    background: var(--light2);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+}
