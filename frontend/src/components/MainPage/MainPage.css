@@ -11,6 +11,12 @@
     padding: 1rem .5rem 2rem;
     background: var(--light1);
 }
+.MainPage .left .btn button {
+    width: 100%;
+    border-radius: .5rem;
+    margin-bottom: .5rem;
+    background: var(--light2);
+}
 .MainPage .games {
     flex: 1;
     flex-wrap: wrap;

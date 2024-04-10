@@ -26,6 +26,11 @@ export default function UserCart() {
     setFetchingData(true)
     handleOrder(totalPrice, totalItems)
   }
+  useEffect(() => {
+    if (Object.values(userCart).length === 0) {
+      setFetchingData(false)
+    }
+  }, [userCart])
   return (
     <div className='UserCart c f'>
       <h2>Your Cart</h2>

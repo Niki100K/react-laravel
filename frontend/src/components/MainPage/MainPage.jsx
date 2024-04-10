@@ -17,12 +17,14 @@ export default function MainPage() {
   return (
     <div className='MainPage c'>
       <div className='left c f'>
-        <button onClick={() => handleLeft('filter')}>Filter</button>
-        {Object.values(userData).length > 0 ? (
-          <button onClick={() => handleLeft('cart')}>Your Cart</button>
-        ) : (
-          <button onClick={() => handleLeft('sign')}>Sign</button>
-        )}
+        <div className='btn c f'>
+          <button onClick={() => handleLeft('filter')}>Filter</button>
+          {Object.values(userData).length > 0 ? (
+            <button onClick={() => handleLeft('cart')}>Your Cart</button>
+          ) : (
+            <button onClick={() => handleLeft('sign')}>Sign</button>
+          )}
+        </div>
         {correctLeft === 'filter' && <Filter handle={handleLeft} />}
         {correctLeft === 'cart' && <UserCart handle={handleLeft} />}
         {correctLeft === 'sign' && <Sign handle={handleLeft} />}

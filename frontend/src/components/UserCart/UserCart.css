@@ -41,6 +41,14 @@
     width: 40%;
     padding: 4px;
 }
+.UserCart .info strong {
+    color: #ffa500;
+    font-family: var(--font2);
+}
+.UserCart .info p {
+    color: var(--white1);
+    font-family: var(--font3);
+}
 .UserCart .info button {
     width: 100%;
     font-size: 14px;
